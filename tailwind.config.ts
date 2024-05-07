@@ -9,8 +9,17 @@ const config: Config = {
   ],
   theme: {
     extend: {
-      backgroundImage: {heroImage: "url('https://cdn.pixabay.com/photo/2016/05/05/02/37/sunset-1373171_1280.jpg')"},
+      backgroundImage: {
+        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
+        "gradient-conic":
+          "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+      },
     },
+    colors: {
+      'themeYellow': '#f6af3b',
+      'themeZinc': '#3F3F46',
+      'themeGray': '#1F2937'
+    }
   },
   plugins: [],
 };

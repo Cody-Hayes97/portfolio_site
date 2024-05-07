@@ -1,3 +1,8 @@
+import AboutSection from "@/components/aboutSection";
+import ExperienceSection from "@/components/experienceSection";
+import ProjectsSection from "@/components/projectsSection";
+import SkillsSection from "@/components/skillsSection";
+import { aboutText } from "@/utils";
 import Image from "next/image";
 
 export default function Home() {
@@ -66,9 +71,13 @@ export default function Home() {
         </div>
       </div>
       <div className="mt-2"></div>
-      <div className="relative flex items-center">
-        <h2 className="pb-2 md:text-3xl text-xl text-primary">About Me</h2>
-        <div className="flex-grow border-t border-gray-400"></div>
+      <div className="2xl:container md:mx-auto pr-8 pl-8">
+        {aboutText.map((item) => (
+          <AboutSection header={item.header} text={item.text} />
+        ))}
+        <SkillsSection />
+        <ProjectsSection />
+        <ExperienceSection />
       </div>
     </main>
   );
