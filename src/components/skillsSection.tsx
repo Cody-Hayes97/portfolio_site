@@ -13,7 +13,10 @@ export default function SkillsSection() {
       </div>
       <div className="flex flex-wrap sm:gap-4 gap-2 w-fit mt-2">
         {techIcons.map((icon) => (
-          <div className="w-38 h-30 bg-themeZinc flex items-center justify-center rounded-md sm:p-4 p-1 shadow-md">
+          <div
+            key={icon.source}
+            className="w-38 h-30 bg-themeZinc flex items-center justify-center rounded-md sm:p-4 p-1 shadow-md"
+          >
             <Image src={icon.source} alt={icon.alt} width={48} height={48} />
           </div>
         ))}

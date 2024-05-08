@@ -2,7 +2,7 @@ import AboutSection from "@/components/aboutSection";
 import ExperienceSection from "@/components/experienceSection";
 import ProjectsSection from "@/components/projectsSection";
 import SkillsSection from "@/components/skillsSection";
-import { aboutText } from "@/utils";
+import { aboutText, experienceDetails } from "@/utils";
 import Image from "next/image";
 
 export default function Home() {
@@ -73,7 +73,11 @@ export default function Home() {
       <div className="mt-2"></div>
       <div className="2xl:container md:mx-auto pr-8 pl-8">
         {aboutText.map((item) => (
-          <AboutSection header={item.header} text={item.text} />
+          <AboutSection
+            header={item.header}
+            text={item.text}
+            key={item.header}
+          />
         ))}
         <SkillsSection />
         <ProjectsSection />

@@ -14,7 +14,15 @@ export default function ProjectsSection() {
       <section className="mt-2">
         <div className="md:grid md:grid-cols-3 flex flex-col justify-between gap-4">
           {projectDetails.map((deets) => (
-            <ProjectCard title={deets.title} description={deets.description} />
+            <ProjectCard
+              title={deets.title}
+              description={deets.description}
+              iconSrc={deets.iconSrc}
+              id={deets.id}
+              key={deets.id}
+              technologiesIcons={deets.technologiesIcons}
+              projectImages={deets.projectImages}
+            />
           ))}
         </div>
       </section>
