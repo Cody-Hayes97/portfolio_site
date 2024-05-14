@@ -62,19 +62,13 @@ export default function ProjectDetails({
           </h2>
           <div className="flex-grow border-t-2 border-themeYellow"></div>
         </div>
-
-        <Carousel>
-          {project?.projectImages?.map((img) => (
-            <Image
-              alt={project ? project?.title : ""}
-              src={img}
-              width={0}
-              height={0}
-              sizes="100vw"
-              style={{ width: "100%", height: "auto" }}
-            />
-          ))}
-        </Carousel>
+        <div className="flex justify-center flex-col mx-auto max-w-6xl">
+          <Carousel>
+            {project?.projectImages?.map((img) => (
+              <img src={img} />
+            ))}
+          </Carousel>
+        </div>
       </section>
     </>
   );
