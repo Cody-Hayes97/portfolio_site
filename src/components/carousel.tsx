@@ -33,7 +33,7 @@ export default function Carousel({ children: slides }: PropsWithChildren) {
         )}
         {slides && Array.isArray(slides) && curr !== slides.length - 1 && (
           <button onClick={next}>
-            <div className=" bg-themeZinc rounded-full p-2 shadow absolute right-2">
+            <div className=" bg-themeZinc rounded-full p-2 shadow absolute right-2 mb-8">
               <ChevronRightIcon fontSize="large" className="scale-150" />
             </div>
           </button>

@@ -62,7 +62,7 @@ export default function ProjectDetails({
           </h2>
           <div className="flex-grow border-t-2 border-themeYellow"></div>
         </div>
-        <div className="flex justify-center flex-col mx-auto max-w-6xl">
+        <div className="flex justify-center flex-col mx-auto max-w-6xl mb-6">
           <Carousel>
             {project?.projectImages?.map((img) => (
               <img src={img} />
