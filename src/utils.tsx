@@ -27,7 +27,7 @@ export interface ExperienceDetailsProps {
 export const aboutText: AboutSectionProps[] = [
   {
     header: "About Me",
-    text: "Hello World, I'm Cody Hayes and I am a Senior Front-End Developer from Los Angeles, CA. I specialize in designing and developing scalable, reliable, full-scale modern web and mobile applications utilized by millions of users. I love to write quality, coherent and maintainable code. I consider myself to be an analytical thinker, problem solver, and solution-oriented person. I prioritize effective time management and take pride in producing high-quality work that surpasses expectations. I am dedicated to fulfilling commitments. Additionally, I am a collaborative team member with strong interpersonal communication skills that allow me to work effectively with others.",
+    text: "Hello World! I'm Cody Hayes and I am a Senior Front-End Developer from Los Angeles, CA. I specialize in designing and developing scalable, reliable, enterprise level modern web and mobile applications utilized by millions of users. I love to write quality, coherent and maintainable code. I consider myself to be an analytical thinker, problem solver, and solution-oriented person. I prioritize effective time management and take pride in producing high-quality work that surpasses expectations. I am dedicated to fulfilling commitments. Additionally, I am a collaborative team member with strong interpersonal communication skills that allow me to work effectively with others. I believe I would be a valuable asset to any team!",
   },
   {
     header: "Experience Summary",
@@ -39,7 +39,7 @@ export const projectDetails: ProjectDetailsProps[] = [
   {
     title: "Jobs Search Portal",
     description:
-      "A comprehensive job search portal for traveling clinicians to search new jobs. clinicians can sort by shift type, location, specialization, job title etc. all including personalized search predictions",
+      "A comprehensive job search portal for traveling clinicians to search new jobs. Clinicians can sort by shift type, location, specialization, job title etc. all including personalized search predictions.",
     iconSrc: "mood-search.svg",
     id: 1,
     technologiesIcons: [
@@ -59,7 +59,7 @@ export const projectDetails: ProjectDetailsProps[] = [
   {
     title: "Clinician Job Matching Preferences",
     description:
-      "Job matching feature built with React in conjunction with AI and Machine Learning. Clinicians will be presented a 'questionnaire' that with auto-magically match them with relevant jobs",
+      "Job matching feature built with React in conjunction with AI and Machine Learning. Clinicians will be presented a 'questionnaire' that with auto-magically match them with relevant jobs.",
     iconSrc: "/settings-2.svg",
     id: 2,
     technologiesIcons: [
@@ -107,7 +107,7 @@ export const projectDetails: ProjectDetailsProps[] = [
   {
     title: "Athlete Deal Platform",
     description:
-      "SaaS allowing users to make deals with pro and college level athletes similar to cameo. Users can book shoutouts, signings, videos, etc. complete with payments integration and video processing",
+      "SaaS allowing users to make deals with pro and college level athletes similar to cameo. Users can book shoutouts, signings, videos, etc. complete with payments integration and video processing.",
     iconSrc: "/moneybag.svg",
     id: 4,
     technologiesIcons: [
@@ -132,7 +132,7 @@ export const projectDetails: ProjectDetailsProps[] = [
   {
     title: "Carbon Capture and Solar Energy Monitoring Dashboard",
     description:
-      "Full-scale IoT monitoring application for commercial buildings to monitor carbon and energy usage. Allows clients to see their devices on a map and view usage data over various time periods",
+      "Full-scale IoT monitoring application for commercial buildings to monitor carbon and energy usage. Allows clients to see their devices on a map and view usage data over various time periods.",
     iconSrc: "/home-bolt.svg",
     id: 5,
     technologiesIcons: [
