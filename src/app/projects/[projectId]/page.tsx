@@ -47,7 +47,10 @@ export default function ProjectDetails({
               </span>
               <div className="grid grid-cols-3 gap-4 col-span-2 md:col-span-4">
                 {project?.technologiesIcons?.map((icon) => (
-                  <div className="w-38 h-30 bg-themeZinc flex items-center justify-center rounded-md sm:p-4 p-1 shadow-md">
+                  <div
+                    key={icon}
+                    className="w-38 h-30 bg-themeZinc flex items-center justify-center rounded-md sm:p-4 p-1 shadow-md"
+                  >
                     <Image alt={icon} width={48} height={48} src={icon} />
                   </div>
                 ))}
@@ -65,7 +68,7 @@ export default function ProjectDetails({
         <div className="flex justify-center flex-col mx-auto max-w-6xl mb-6">
           <Carousel>
             {project?.projectImages?.map((img) => (
-              <img src={img} />
+              <img src={img} key={img} />
             ))}
           </Carousel>
         </div>
