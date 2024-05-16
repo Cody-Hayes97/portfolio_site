@@ -1,4 +1,4 @@
-import React, { PropsWithChildren, ReactElement, useState } from "react";
+import React, { PropsWithChildren, useState } from "react";
 import ChevronLeftIcon from "@mui/icons-material/ChevronLeft";
 import ChevronRightIcon from "@mui/icons-material/ChevronRight";
 
@@ -33,7 +33,7 @@ export default function Carousel({ children: slides }: PropsWithChildren) {
         )}
         {slides && Array.isArray(slides) && curr !== slides.length - 1 && (
           <button onClick={next}>
-            <div className=" bg-themeZinc rounded-full p-2 shadow absolute right-2 mb-8">
+            <div className=" bg-themeZinc rounded-full p-2 shadow absolute right-2">
               <ChevronRightIcon fontSize="large" className="scale-150" />
             </div>
           </button>
